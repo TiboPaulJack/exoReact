@@ -1,3 +1,4 @@
+import Product from "./Product";
 
   
 
@@ -11,11 +12,13 @@ export default function BestProducts({ products }) {
     return (
         <div className="products">
             <h2>Best Rated Product</h2>
-                <div className="product">
+            <Product product={bestProducts} />
+            
+                {/* <div className="product">
                     <h3>{bestProducts.title}</h3>
                     <p>{bestProducts.price}€</p>
                     <p>{bestProducts.rating}</p>
-                </div>
+                </div> */}
         </div>
         
     )
